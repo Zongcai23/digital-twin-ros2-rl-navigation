@@ -265,35 +265,6 @@ The ROS 2 version keeps the original trajectory/action calculation but adds safe
 | `/rl_vel` | `geometry_msgs/msg/Twist` | RL velocity command. Uses `linear.x`, `linear.y`, and `angular.z`. |
 | `/resetSignal` | `geometry_msgs/msg/Twist` | Reset command. Uses `angular.x` as the reset flag. |
 
-## 9. Uploading This Repository to GitHub
-
-### Method A — Upload through the GitHub website
-
-1. Log in to GitHub.
-2. Click **New repository**.
-3. Name it, for example: `digital-twin-ros2-rl-navigation`.
-4. Keep it public or private as needed.
-5. Do not initialize with another README if you want to use this README directly.
-6. Upload all files from this folder.
-7. Commit the upload.
-
-### Method B — Push from terminal
-
-Create an empty repository on GitHub first. Then run:
-
-```bash
-cd digital-twin-ros2-rl-navigation
-
-git init
-git add .
-git commit -m "Add ROS 2 digital twin RL navigation demo"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/digital-twin-ros2-rl-navigation.git
-git push -u origin main
-```
-
-The included USD file is about 34 MB, so it is below GitHub's hard single-file limit. If you later add larger videos, datasets, or USD assets, use Git LFS.
-
-## 10. Citation / Acknowledgement
+## 9. Citation / Acknowledgement
 
 If you use this repository, please cite the corresponding project or paper once it is available.
